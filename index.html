@@ -314,7 +314,907 @@
 </tr>
 </tbody></table>
 <p><code>&lt;!DOCTYPE&gt;</code>文档类型声明，作用就是告诉浏览器使用哪种HTML版本来显示网页。</p>
-        
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=4937375&auto=1&height=66"></iframe>
+
+<h3 id="lang语言种类"><a href="#lang语言种类" class="headerlink" title="lang语言种类"></a>lang语言种类</h3><p>1.en定义语言为英语。</p>
+<p>2.zh—CH定义语言为中文</p>
+<h3 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h3><p>在标签内<code>&lt;head&gt;</code>，可以通过<code>&lt;meta&gt;</code>标签的charset属性来规定HTML文档应该使用哪种字符编码。</p>
+<h3 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h3><p><code>&lt;h1-6&gt;&lt;h1-6&gt;</code>标题标签</p>
+<p>定义段落的段落标签<code>&lt;/p&gt;&lt;p&gt;</code></p>
+<p>强制换行标签<code>&lt;br /&gt;</code></p>
+<h3 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h3><table>
+<thead>
+<tr>
+<th>语义</th>
+<th>标签</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加粗</td>
+<td><code>&lt;strong&gt;&lt;/strong&gt;</code>或<code>&lt;b&gt;&lt;/b&gt;</code></td>
+<td>更推荐使用<code>&lt;strong&gt;</code>标签加粗语义更强烈</td>
+</tr>
+<tr>
+<td>倾斜</td>
+<td><code>&lt;em&gt;&lt;/em&gt;</code>或<code>&lt;i&gt;&lt;/i&gt;</code></td>
+<td>更推荐使用<code>&lt;em&gt;</code>标签倾斜语义更强烈</td>
+</tr>
+<tr>
+<td>删除线</td>
+<td><code>&lt;del&gt;&lt;/del&gt;</code>或<code>&lt;s&gt;&lt;/s&gt;</code></td>
+<td>更推荐使用<code>&lt;del&gt;</code>标签删除线语义更强烈</td>
+</tr>
+<tr>
+<td>下划线</td>
+<td><code>&lt;ins&gt;&lt;/ins&gt;</code>或<code>&lt;u&gt;&lt;/u&gt;</code></td>
+<td>更推荐使用<code>&lt;ins&gt;</code>标签下划线语义更强烈</td>
+</tr>
+</tbody></table>
+<h3 id="lt-div-gt-和-lt-span-gt-标签"><a href="#lt-div-gt-和-lt-span-gt-标签" class="headerlink" title="&lt;div&gt;和&lt;span&gt;标签"></a><code>&lt;div&gt;</code>和<code>&lt;span&gt;</code>标签</h3><p>div和span是没有语义的，它们就是一个块标签，用来装内容</p>
+<h3 id="图像标签和路径-重点"><a href="#图像标签和路径-重点" class="headerlink" title="图像标签和路径(重点)"></a>图像标签和路径(重点)</h3><h4 id="1-图像标签"><a href="#1-图像标签" class="headerlink" title="1.图像标签"></a>1.图像标签</h4><p>在HTML标签中，<code>&lt;img&gt;</code>标签用于定义HTML页面中的图像</p>
+<p><code>&lt;img src=&quot;图像URL&quot; /&gt;</code></p>
+<p>src是<img>标签的必须属性，它用于指定图像文件的路径和文件名。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>图片路径</td>
+<td>必须属性。</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>文本</td>
+<td>替换文本。图像不能显示的文字。</td>
+</tr>
+<tr>
+<td>title</td>
+<td>文本</td>
+<td>提示文本。鼠标放到图像上，显示的文字。</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素</td>
+<td>设置图像的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>像素</td>
+<td>设置图像的高度</td>
+</tr>
+<tr>
+<td>border</td>
+<td>像素</td>
+<td>设置图像的边框粗细</td>
+</tr>
+</tbody></table>
+<p>1.图像标签可以拥有多个属性，必须写在标签名后面。</p>
+<p>2.属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</p>
+<p>3.属性采取键值对的格式，即key=“value”的格式，属性=“属性值”</p>
+<h4 id="2-路径"><a href="#2-路径" class="headerlink" title="2.路径"></a>2.路径</h4><h5 id="（1）目录文件夹和根目录："><a href="#（1）目录文件夹和根目录：" class="headerlink" title="（1）目录文件夹和根目录："></a>（1）目录文件夹和根目录：</h5><p>实际工作中，我们的文件不能随便乱放，否则用起来很难快速的找到他们，因此我们需要一个文件夹来管理他们。</p>
+<p><strong>目录文件夹：</strong>就是普通文件夹，里面只不过存放了我们做页面所需要的相关素材，比如html文件、图片等。</p>
+<h5 id="（2）路径之相对路径"><a href="#（2）路径之相对路径" class="headerlink" title="（2）路径之相对路径"></a>（2）路径之相对路径</h5><p><strong>相对路径：</strong>以引用文件所在位置为参考基础，而建立出的目录路径。</p>
+<p>这里简单来说，图片相对于HTML页面的位置</p>
+<table>
+<thead>
+<tr>
+<th>相对路径分类</th>
+<th>符号</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>同一级路径</td>
+<td></td>
+<td>图像文件位于HTML文件同一级 如 <code>&lt;img src=&quot;baidu.gif&quot; /&gt;</code></td>
+</tr>
+<tr>
+<td>下一级路径</td>
+<td>/</td>
+<td>图像文件位于HTML文件下一级 如<code>&lt;img src=&quot;images/baidu.gif&quot; /&gt;</code></td>
+</tr>
+<tr>
+<td>上一级路径</td>
+<td>../</td>
+<td>图像文件位于HTML文件上一级 如<code>&lt;img src=&quot;../baidu.gif&quot; /&gt;</code></td>
+</tr>
+<tr>
+<td>前站点根目录</td>
+<td>/</td>
+<td>图像文件位于当前站点根目录的 images 文件夹中 如<img src="/images/picture.jpg"></td>
+</tr>
+</tbody></table>
+<h5 id="3）路径之绝对路径"><a href="#3）路径之绝对路径" class="headerlink" title="(3）路径之绝对路径"></a>(3）路径之绝对路径</h5><p>绝对路径：是指目录下的绝对位置，直接到达目标位置，通常是从盘符开始的路径。</p>
+<p>例如，“D:\wed\img\logo.gif”或完整的网络地址“<a target="_blank" rel="noopener" href="http://www.itcasr.cn/images/loge.gif%E2%80%9D%E3%80%82">http://www.itcasr.cn/images/loge.gif”。</a></p>
+<h3 id="超链接标签"><a href="#超链接标签" class="headerlink" title="超链接标签"></a>超链接标签</h3><h4 id="1-链接的语法格式"><a href="#1-链接的语法格式" class="headerlink" title="1.链接的语法格式"></a>1.链接的语法格式</h4><p><code>&lt;a href=&quot;跳转目标&quot; target=&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;/a&gt;</code></p>
+<p>单词anchor的缩写，意为：锚</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>用于指定链接目标的url地址，（必须为属性）当为标签应用href属性时，他就具有了超链接的功能</td>
+</tr>
+<tr>
+<td>target</td>
+<td>用于指定链接页面的打开方式，其中_self为默认值，__blank为在新窗口中打开的打开方式</td>
+</tr>
+</tbody></table>
+<h4 id="2-链接分类"><a href="#2-链接分类" class="headerlink" title="2.链接分类"></a>2.链接分类</h4><p>1.外部链接：例如<code>&lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;</code></p>
+<p>2.内部链接：网站内部页面之间的互相链接，直接链接内部页面名称即可，例如<code>&lt;a href=&quot;index.html&quot;&gt;首页&lt;/a&gt;</code></p>
+<p>3.空链接：如果当时没有确定链接目标时，<code>&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;</code></p>
+<p>4.下载链接：如果href里面地址是一个文件或者压缩包，会下载这个文件</p>
+<p>5.网页元素链接：在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接。</p>
+<p>6.锚点链接：点我们点击链接，可以快速定位到页面中的某个位置。</p>
+<p>在链接文本的href属性中，设置属性值为#名字的形式，例如<code>&lt;a href=&quot;#two&quot;&gt;第二集&lt;/a&gt;   “id=two”</code></p>
+<h3 id="HTML中的注释和特殊字符"><a href="#HTML中的注释和特殊字符" class="headerlink" title="HTML中的注释和特殊字符"></a>HTML中的注释和特殊字符</h3><h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>html中的注释<code>以&lt;!--开头，以--&gt;结束</code></p>
+<h4 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h4><table>
+<thead>
+<tr>
+<th>特殊字符</th>
+<th>描述</th>
+<th>字符的代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&nbsp;</td>
+<td>空格符</td>
+<td>&amp;nbsp；</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于号</td>
+<td>&amp;lt；</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于号</td>
+<td>&amp;gt；</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>和号</td>
+<td>&amp;amp；</td>
+</tr>
+<tr>
+<td>&yen;</td>
+<td>人民币</td>
+<td>&amp;yen；</td>
+</tr>
+<tr>
+<td>&copy;</td>
+<td>版权</td>
+<td>&amp;copy；</td>
+</tr>
+<tr>
+<td>&reg;</td>
+<td>注册商标</td>
+<td>&amp;reg；</td>
+</tr>
+<tr>
+<td>&deg;</td>
+<td>摄氏度</td>
+<td>&amp;deg；</td>
+</tr>
+<tr>
+<td>&plusmn;</td>
+<td>正负号</td>
+<td>&amp;plusmn；</td>
+</tr>
+<tr>
+<td>&times;</td>
+<td>乘号</td>
+<td>&amp;times；</td>
+</tr>
+<tr>
+<td>&divide;</td>
+<td>除号</td>
+<td>&amp;divide；</td>
+</tr>
+<tr>
+<td>&sup2;</td>
+<td>平方</td>
+<td>&amp;sup2；</td>
+</tr>
+<tr>
+<td>&sup3;</td>
+<td>立方</td>
+<td>&amp;sup3；</td>
+</tr>
+</tbody></table>
+<h4 id="HTML-中有用的字符实体"><a href="#HTML-中有用的字符实体" class="headerlink" title="HTML 中有用的字符实体"></a>HTML 中有用的字符实体</h4><p><strong>注释：</strong>实体名称对大小写敏感！</p>
+<table>
+<thead>
+<tr>
+<th align="left">显示结果</th>
+<th align="left">描述</th>
+<th align="left">实体名称</th>
+<th align="left">实体编号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td align="left">空格</td>
+<td align="left">&nbsp;</td>
+<td align="left">&#160;</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">小于号</td>
+<td align="left">&lt;</td>
+<td align="left">&#60;</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">大于号</td>
+<td align="left">&gt;</td>
+<td align="left">&#62;</td>
+</tr>
+<tr>
+<td align="left">&amp;</td>
+<td align="left">和号</td>
+<td align="left">&amp;</td>
+<td align="left">&#38;</td>
+</tr>
+<tr>
+<td align="left">“</td>
+<td align="left">引号</td>
+<td align="left">&quot;</td>
+<td align="left">&#34;</td>
+</tr>
+<tr>
+<td align="left">‘</td>
+<td align="left">撇号</td>
+<td align="left">&apos; (IE不支持)</td>
+<td align="left">&#39;</td>
+</tr>
+<tr>
+<td align="left">￠</td>
+<td align="left">分（cent）</td>
+<td align="left">&cent;</td>
+<td align="left">&#162;</td>
+</tr>
+<tr>
+<td align="left">£</td>
+<td align="left">镑（pound）</td>
+<td align="left">&pound;</td>
+<td align="left">&#163;</td>
+</tr>
+<tr>
+<td align="left">¥</td>
+<td align="left">元（yen）</td>
+<td align="left">&yen;</td>
+<td align="left">&#165;</td>
+</tr>
+<tr>
+<td align="left">€</td>
+<td align="left">欧元（euro）</td>
+<td align="left">&euro;</td>
+<td align="left">&#8364;</td>
+</tr>
+<tr>
+<td align="left">§</td>
+<td align="left">小节</td>
+<td align="left">&sect;</td>
+<td align="left">&#167;</td>
+</tr>
+<tr>
+<td align="left">©</td>
+<td align="left">版权（copyright）</td>
+<td align="left">&copy;</td>
+<td align="left">&#169;</td>
+</tr>
+<tr>
+<td align="left">®</td>
+<td align="left">注册商标</td>
+<td align="left">&reg;</td>
+<td align="left">&#174;</td>
+</tr>
+<tr>
+<td align="left">™</td>
+<td align="left">商标</td>
+<td align="left">&trade;</td>
+<td align="left">&#8482;</td>
+</tr>
+<tr>
+<td align="left">×</td>
+<td align="left">乘号</td>
+<td align="left">&times;</td>
+<td align="left">&#215;</td>
+</tr>
+<tr>
+<td align="left">÷</td>
+<td align="left">除号</td>
+<td align="left">&divide;</td>
+<td align="left">&#247;</td>
+</tr>
+</tbody></table>
+<h3 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h3><p>表格基本语法</p>
+<p>1.<code>&lt;table&gt;&lt;/table&gt;</code>是用于定义表格的标签</p>
+<p>2.<tr></tr>标签用于定义表格中的行，必须嵌套在<code>&lt;table&gt;&lt;/table&gt;</code>标签中。</p>
+<p>3.<td></td>用于定义表格中的单元格，必须嵌套在<code>&lt;tr&gt;&lt;/tr&gt;</code>标签中。</p>
+<p>4.字母td指表格数据，即数据单元格的内容。</p>
+<p>5.<code>&lt;th&gt;&lt;/th&gt;</code>标签表示HTML表格的表头部分</p>
+<p>*不实用</p>
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>left、center、right</td>
+<td>规定表格相对周围元素的对齐方式</td>
+</tr>
+<tr>
+<td>border</td>
+<td>1或“”</td>
+<td>规定表格单元是否拥有边框，默认为“”，表示没有边框</td>
+</tr>
+<tr>
+<td>cellpadding</td>
+<td>像素值</td>
+<td>规定单元边沿与其内容之间的空白，默认1像素</td>
+</tr>
+<tr>
+<td>cellspacing</td>
+<td>像素值</td>
+<td>规定单元格之间的空白，默认2像素</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素值或百分比</td>
+<td>规定表格的宽度</td>
+</tr>
+</tbody></table>
+<p><code>&lt;thead&gt;</code>标签 表格的头部区域，<code>&lt;tbody&gt;</code>标签 表格的主体区域</p>
+<p>合并单元格</p>
+<p><strong>跨行合并</strong>：<strong>rowspan=”合并单元格的个数”</strong>  最上侧的单元格为目标单元格，写合并代码</p>
+<p><strong>跨列合并</strong>：<strong>colspan=”合并单元格的个数”</strong>   最左侧的单元格为目标单元格，写合并代码</p>
+<p>1.先确定是跨行还是跨列合并</p>
+<p>2.找到目标单元格。写上合并方式=合并的单元格数量。例如：<code>&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;</code></p>
+<p>3.删除多余的单元格</p>
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><h4 id="一-无序列表："><a href="#一-无序列表：" class="headerlink" title="一.无序列表："></a>一.无序列表：</h4><p><code>&lt;ul&gt;</code>标签标识HTML页面中项目的无序列表，一般会以项目符号呈现列表项，而列表项使用<code>&lt;li&gt;</code>标签定义。</p>
+<p>1.无序列表的各个列表项之间没有顺序级别之分,是并列的。</p>
+<p>2.<code>&lt;ul&gt; &lt;/ul&gt;</code>中只能嵌套<code>&lt;li&gt;&lt;/li&gt;</code> ,直接在<code>&lt;ul&gt; &lt;/ul&gt;</code>标签中输入其他标签或者文字的做法是不被允许的。</p>
+<p>3.<code>&lt;li&gt;</code>与<code>&lt;/li&gt;</code>之间相当于一个容器,可以容纳所有元素。</p>
+<p>4.无序列表会带有自己的样式属性，但在实际使用时,我们会使用CSS来设置。</p>
+<h4 id="二-有序列表："><a href="#二-有序列表：" class="headerlink" title="二.有序列表："></a>二.有序列表：</h4><p><code>&lt;ol&gt;</code>标签用于定义有序列表，列表排序以数字来显示，并且使用<code>&lt;li&gt;</code>标签来定义列表项。</p>
+<p>三.自定义列表：<dl>标签用于定义描述列表(或定义列表)，该标签会与<dt>(定义项目/名字)和<dd>(描述每一个项目/名字)一起使用。</p>
+<h3 id="表单标签：收集用户信息"><a href="#表单标签：收集用户信息" class="headerlink" title="表单标签：收集用户信息"></a>表单标签：收集用户信息</h3><p>表单域、表单控件和提示信息</p>
+<h4 id="表单域"><a href="#表单域" class="headerlink" title="表单域"></a>表单域</h4><form>标签用于定义表单域，以实现用户信息的收集和传递。
+
+<p><from>会把它范围内的表单元素信息提交给服务器</p>
+<from action="url地址" method="提交方式" name="表单域名称">
+
+<p>各种表单元素控件</p>
+<from>
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>url地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post</td>
+<td>用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单域。</td>
+</tr>
+</tbody></table>
+<h4 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h4><p>1.input输入表单元素</p>
+<p>2.select下拉表单元素</p>
+<p>3.textarea文本域元素</p>
+<h5 id="lt-input-gt-表单元素"><a href="#lt-input-gt-表单元素" class="headerlink" title="&lt;input&gt;表单元素"></a><code>&lt;input&gt;表单元素</code></h5><input type="属性值" />
+
+<p><input/>标签为单标签</p>
+<p>type属性设置不同的属性值用来指定不同的控件类型</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>button</td>
+<td>定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）</td>
+</tr>
+<tr>
+<td>checkbox</td>
+<td>定义复选框</td>
+</tr>
+<tr>
+<td>file</td>
+<td>定义输入字段和“浏览”按钮，供文件上传</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>定义隐藏的输入字段</td>
+</tr>
+<tr>
+<td>image</td>
+<td>定义图像形式的提交按钮</td>
+</tr>
+<tr>
+<td>password</td>
+<td>定义密码字段。该字段中的字符被掩码</td>
+</tr>
+<tr>
+<td>radio</td>
+<td>定义单选按钮</td>
+</tr>
+<tr>
+<td>reset</td>
+<td>定义重置按钮。重置按钮会清除表单中的所有数据。</td>
+</tr>
+<tr>
+<td>submit</td>
+<td>定义提交按钮。提交按钮会把表单数据发送到服务器</td>
+</tr>
+<tr>
+<td>text</td>
+<td>定义单行的输入字段，用户可在其中输入文本。默认宽度为20个字符</td>
+</tr>
+</tbody></table>
+<p>name是表单元素的名字 ，要求单选框和复选框要有相同的name值</p>
+<p>name和value是每个表单元素都有的属性值，主要给后台人员使用。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>由用户自定义</td>
+<td>定义input元素的名称</td>
+</tr>
+<tr>
+<td>value</td>
+<td>由用户自定义</td>
+<td>规定input元素的值</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>checked</td>
+<td>规定此input元素首次加载时应当被选中</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>正整数</td>
+<td>规定输入字段中的字符的最大长度</td>
+</tr>
+</tbody></table>
+<h5 id="lt-label-gt-标签"><a href="#lt-label-gt-标签" class="headerlink" title="&lt;label&gt;标签"></a><code>&lt;label&gt;</code>标签</h5><p><label>标签为input元素定义标注(标签)</p>
+<p><label>标签用于绑定一个表单元素，当点击<label>标签内的文本时，浏览器就会自动将焦点光标转到或者选择对应的表单元素上，用来增加用户体验</p>
+<p><label for="sex">男</label></p>
+<input type="radio" name="sex" id="sex" />
+
+<p><label>标签的for属性应当与相关元素的id属性相同</p>
+<h5 id="lt-select-gt-表单元素"><a href="#lt-select-gt-表单元素" class="headerlink" title="&lt;select&gt;表单元素"></a><code>&lt;select&gt;</code>表单元素</h5><p>`<select></p>
+<p>​    <option>选项一</option></p>
+<p>​    <option>选项二</option></p>
+<p>​    <option>选项三</option></p>
+<p>​    …</p>
+<p></select>`</p>
+<p><code>&lt;select&gt;中至少包含一对&lt;option&gt;</code></p>
+<p>在<option>中定义select=“selected”时，当前项即为默认选中项。</p>
+<h3 id="HTML-框架"><a href="#HTML-框架" class="headerlink" title="HTML 框架"></a>HTML 框架</h3><p><strong>通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。</strong></p>
+<h4 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h4><p>通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p>
+<p>使用框架的坏处：</p>
+<ul>
+<li>开发人员必须同时跟踪更多的HTML文档</li>
+<li>很难打印整张页面</li>
+</ul>
+<p>框架结构标签（<frameset>）</p>
+<ul>
+<li>框架结构标签（<frameset>）定义如何将窗口分割为框架</li>
+<li>每个 frameset 定义了一系列行<em>或</em>列</li>
+<li>rows/columns 的值规定了每行或每列占据屏幕的面积</li>
+<li>rows为水平框架，cols为垂直框架</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">&quot;25%,75%&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">&quot;a.htm&quot;</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">frame</span> <span class="attr">src</span>=<span class="string">&quot;b.htm&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">frameset</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="基本的注意事项-有用的提示："><a href="#基本的注意事项-有用的提示：" class="headerlink" title="基本的注意事项 - 有用的提示："></a>基本的注意事项 - 有用的提示：</h4><p>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在 <frame> 标签中加入：noresize=”noresize”。</p>
+<p>为不支持框架的浏览器添加 <noframes> 标签。</p>
+<p><strong>重要提示：</strong>不能将 <body></body> 标签与 <frameset></frameset> 标签同时使用！不过，假如你添加包含一段文本的 <noframes> 标签，就必须将这段文字嵌套于 <body></body> 标签内。</p>
+<h3 id="HTML-Iframe"><a href="#HTML-Iframe" class="headerlink" title="HTML Iframe"></a>HTML Iframe</h3><p><strong>iframe 用于在网页内显示网页。</strong></p>
+<h4 id="添加-iframe-的语法"><a href="#添加-iframe-的语法" class="headerlink" title="添加 iframe 的语法"></a>添加 iframe 的语法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;URL&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>URL</em> 指向隔离页面的位置。</p>
+<h4 id="Iframe-设置高度和宽度"><a href="#Iframe-设置高度和宽度" class="headerlink" title="Iframe - 设置高度和宽度"></a>Iframe - 设置高度和宽度</h4><p>height 和 width 属性用于规定 iframe 的高度和宽度。</p>
+<p>属性值的默认单位是像素，但也可以用百分比来设定（比如 “80%”）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;demo_iframe.htm&quot; width&#x3D;&quot;200&quot; height&#x3D;&quot;200&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Iframe-删除边框"><a href="#Iframe-删除边框" class="headerlink" title="Iframe - 删除边框"></a>Iframe - 删除边框</h4><p>frameborder 属性规定是否显示 iframe 周围的边框。</p>
+<p>设置属性值为 “0” 就可以移除边框：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;demo_iframe.htm&quot; frameborder&#x3D;&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用-iframe-作为链接的目标"><a href="#使用-iframe-作为链接的目标" class="headerlink" title="使用 iframe 作为链接的目标"></a>使用 iframe 作为链接的目标</h4><p>iframe 可用作链接的目标（target）。</p>
+<p>链接的 target 属性必须引用 iframe 的 name 属性：</p>
+<p><strong>实例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;demo_iframe.htm&quot; name&#x3D;&quot;iframe_a&quot;&gt;&lt;&#x2F;iframe&gt;</span><br><span class="line">&lt;p&gt;&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.w3school.com.cn&quot; target&#x3D;&quot;iframe_a&quot;&gt;W3School.com.cn&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="HTML-脚本"><a href="#HTML-脚本" class="headerlink" title="HTML 脚本"></a>HTML 脚本</h3><p><strong>JavaScript 使 HTML 页面具有更强的动态和交互性。</strong></p>
+<h4 id="HTML-script-元素"><a href="#HTML-script-元素" class="headerlink" title="HTML script 元素"></a>HTML script 元素</h4><script> 标签用于定义客户端脚本，比如 JavaScript。
+
+script 元素既可包含脚本语句，也可通过 src 属性指向外部脚本文件。
+
+必需的 type 属性规定脚本的 MIME 类型。
+
+JavaScript 最常用于图片操作、表单验证以及内容动态更新。
+
+下面的脚本会向浏览器输出“Hello World!”：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">document.write(&quot;Hello World!&quot;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+#### `<noscript>` 标签
+
+<noscript> 标签提供无法使用脚本时的替代内容，比方在浏览器禁用脚本时，或浏览器不支持客户端脚本时。
+
+noscript 元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。
+
+只有在浏览器不支持脚本或者禁用脚本时，才会显示 noscript 元素中的内容：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">document.write(&quot;Hello World!&quot;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;noscript&gt;Your browser does not support JavaScript!&lt;&#x2F;noscript&gt;</span><br></pre></td></tr></table></figure>
+
+### HTML `<head>` 元素
+
+<head> 元素是所有头部元素的容器。<head> 内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。
+
+以下标签都可以添加到 head 部分：<title>、<base>、<link>、<meta>、<script> 以及 <style>。
+
+### HTML ` <title> `元素
+
+<title> 标签定义文档的标题。
+
+title 元素在所有 HTML/XHTML 文档中都是必需的。
+
+title 元素能够：
+
+- 定义浏览器工具栏中的标题
+- 提供页面被添加到收藏夹时显示的标题
+- 显示在搜索引擎结果中的页面标题
+
+### HTML  `<base>` 元素
+
+<base> 标签为页面上的所有链接规定默认地址或默认目标（target）：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;base href&#x3D;&quot;http:&#x2F;&#x2F;www.w3school.com.cn&#x2F;images&#x2F;&quot; &#x2F;&gt;</span><br><span class="line">&lt;base target&#x3D;&quot;_blank&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+
+### HTML` <style> `元素
+
+<style> 标签用于为 HTML 文档定义样式信息。
+
+您可以在 style 元素内规定 HTML 元素在浏览器中呈现的样式：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">body &#123;background-color:yellow&#125;</span><br><span class="line">p &#123;color:blue&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+
+### HTML `<link>` 元素
+
+<link> 标签定义文档与外部资源之间的关系。
+
+<link> 标签最常用于连接样式表：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; type&#x3D;&quot;text&#x2F;css&quot; href&#x3D;&quot;mystyle.css&quot; &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+
+### HTML` <meta> `元素
+
+元数据（metadata）是关于数据的信息。
+
+<meta> 标签提供关于 HTML 文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。
+
+典型的情况是，meta 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。
+
+<meta> 标签始终位于 head 元素中。
+
+元数据可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。
+
+#### 针对搜索引擎的关键词
+
+一些搜索引擎会利用 meta 元素的 name 和 content 属性来索引您的页面。
+
+下面的 meta 元素定义页面的描述：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;description&quot; content&#x3D;&quot;Free Web tutorials on HTML, CSS, XML&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+
+下面的 meta 元素定义页面的关键词：
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;HTML, CSS, XML&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+
+name 和 content 属性的作用是描述页面的内容。
+
+#### HTML 头部元素
+
+| 标签     | 描述                                     |
+| :------- | :--------------------------------------- |
+| <head>   | 定义关于文档的信息。                     |
+| <title>  | 定义文档标题。                           |
+| <base>   | 定义页面上所有链接的默认地址或默认目标。 |
+| <link>   | 定义文档与外部资源之间的关系。           |
+| <meta>   | 定义关于 HTML 文档的元数据。             |
+| <script> | 定义客户端脚本。                         |
+| <style>  | 定义文档的样式信息。                     |
+
+### URL Schemes
+
+以下是其中一些最流行的 scheme：
+
+| Scheme | 访问               | 用于...                             |
+| :----- | :----------------- | :---------------------------------- |
+| http   | 超文本传输协议     | 以 http:// 开头的普通网页。不加密。 |
+| https  | 安全超文本传输协议 | 安全网页。加密所有信息交换。        |
+| ftp    | 文件传输协议       | 用于将文件下载或上传至网站。        |
+| file   |                    | 您计算机上的文件。                  |
+
+
+
+# css
+
+选择器{样式}
+
+给谁该样式{改什么样式}
+
+键值对形式出现
+
+属性和属性之间用冒号分开
+
+多个键值对之间用英文分号进行区分
+
+### css选择器的作用
+
+选择标签用
+
+基础选择器和复合选择器
+
+基础选择器是由单个选择器组成的，包括标签选择器（标签名）、类选择器、id选择器和通配符选择器
+
+#### 类选择器
+
+语法
+
+.类名{
+
+​          属性1：属性值1；
+
+​          ...
+
+}
+
+需要用class属性调用
+
+class=‘value’
+
+长名称或词组可以使用中横线来为选择器命名。
+
+**多类名**
+
+在标签class属性中写多个类名
+
+多个类名中间必须用空格分开
+
+#### id选择器
+
+#定义开头 id调用，只能调用一次
+
+id选择器一般用于页面唯一性的元素上，经常和JavaScript搭配使用
+
+#### 通配符选择器
+
+使用*定义，表示选取页面中所有元素
+
+语法
+
+*{
+
+   属性1：属性值1；
+
+}
+
+| 基础选择器   | 作用                          | 特点                               | 使用情况         | 用法               |
+| ------------ | ----------------------------- | ---------------------------------- | ---------------- | ------------------ |
+| 标签选择器   | 可以选出所有相同的标签，比如p | 不能差异化选择                     | 较多             | p {color：red；}   |
+| 类选择器     | 可以选出一个或者多个标签      | 可以根据需求选择                   | 非常多           | .nav{color：red；} |
+| id选择器     | 一次只能选择一个标签          | id属性只能在每个HTML文档中出现一次 | 一般和js搭配使用 | #nav{color：red；} |
+| 通配符选择器 | 选择所有标签                  | 选择的太多，有部分不需要           | 特殊情况使用     | * {color：red；}   |
+
+### css字体属性
+
+#### 文本字体
+
+css使用font-family属性定义文本的字体系列
+
+各个字体之间必须使用英文状态下的逗号隔开
+
+一般情况下，如果有空格隔开的多个单词组成的字体，加引号
+
+尽量使用系统默认自带字体，保证在仍会用户的浏览器中都能正确的显示
+
+#### 字体大小
+
+css使用font-size属性定义大小
+
+px像素大小
+
+#### 字体粗细
+
+ccs使用font-weight属性设置文本字体从的粗细
+
+bold，bolder，数字
+
+| 属性值  | 描述                                                       |
+| ------- | ---------------------------------------------------------- |
+| normal  | 默认值(不加粗的)                                           |
+| bold    | 定义粗体(加粗的)                                           |
+| 100~900 | 400等同于normal，而700等同于bold，注意这个数字后面不跟单位 |
+
+#### 字体样式
+
+css使用font-style属性设置文本的风格
+
+| 属性值 | 作用                                                    |
+| ------ | ------------------------------------------------------- |
+| normal | 默认值，浏览器会显示标准的字体样式 font-style：normal； |
+| italic | 浏览器会显示斜体的字体样式                              |
+
+#### 复合属性节约代码
+
+`body {
+
+​     font： font-style      font-weight    font-size/line-height    font-family；
+
+}
+
+`
+
+使用font属性时，必须按上面语法格式中的顺序书写，不能更换顺序，并且各个属性间以空格隔开
+
+不需要设置的属性可以省略(取默认值)，但必须保留size和family属性，否则font属性将不起作用
+
+| 属性        | 表示     | 注意点                                                       |
+| ----------- | -------- | ------------------------------------------------------------ |
+| font-size   | 字号     | 我们通常用的单位是px像素，一定要跟上单位                     |
+| font-family | 字体     | 实际工作中按照团队约定来写字体                               |
+| font-weight | 字体粗细 | 记住加粗是700或者bold 不加粗是normal或者400记住数字不要跟单位 |
+| font-style  | 字体样式 | 记住倾斜是italic   不倾斜是normal工作中我们最常用normal      |
+| font        | 字体连写 | 1.字体连写是有顺序的 不能随意换位置 2.其中字号和字体必须同时出现 |
+
+### css文本属性
+
+#### 文本颜色
+
+color属性用于定义文本的颜色
+
+| 表示表示       | 属性值                        |
+| -------------- | ----------------------------- |
+| 预定义的颜色值 | red,green,blue,pink           |
+| 十六进制       | #FF0000,#FF6600,#29D794       |
+| rgb代码        | rgb(255,0,0)或rgb(100%,0%,0%) |
+
+开发中最常用的是十六进制
+
+#### 对齐文本
+
+text-align属性用于设置元素内文本内容的水平对齐方式
+
+| 属性值 | 解释     |
+| ------ | -------- |
+| left   | 右对齐   |
+| right  | 左对齐   |
+| center | 居中对齐 |
+
+#### 装饰文本
+
+text-decoration属性规定添加到文本的修饰。可以给文本添加下划线、删除线、上划线等。
+
+| 属性值      | 描述                     |
+| ----------- | ------------------------ |
+| none        | 默认。没有装饰线(最常用) |
+| underline   | 下划线。链接a自带下划线  |
+| overline    | 上划线                   |
+| line-though | 删除线                   |
+
+#### 文本缩进
+
+text-indent属性用来指定文本的第一行的缩进，通常是将段落的首行缩进
+
+em是一个相对单位，就是当前元素1个文字的大小，如果当前元素没有设置大小，则会按照父元素的1个文字大小
+
+
+
+#### 行间距
+
+line-height属性用于设置行间的距离(行高)。可以控制文字行与行之间的距离
+
+| 属性            | 表示     | 注意点                                                |
+| --------------- | -------- | ----------------------------------------------------- |
+| color           | 文本颜色 | 我们通常用十六进制比如而且是简写形式#fff              |
+| text-align      | 文本对齐 | 可以设定文字水平的对齐方式                            |
+| text-indent     | 文本缩进 | 通常我们用于段落首行缩进2个字的距离 text-indent：2em; |
+| text-decoration | 文本修饰 | 记住添加下划线underline取消下划线none                 |
+| line-height     | 行高     | 控制行与行之间的距离                                  |
+
+### css引入方式
+
+#### 内部样式表
+
+`<style>标签理论上可以放在html文档的任何地方，但一般会放在文档的<head>标签中`
+
+
+通过此种方式，可以方便控制当前整个页面中的元素样式设置
+
+代码结构清晰，但是没有实现结构与样式完全分离
+
+使用内部样式表设定css，通常也被称为嵌入式引入，这种方式是我们练习时常用的方式
+
+#### 行内样式表
+
+`<div style="color:red; font-size:12px;">mmm</div>`
+
+style其实就是标签的属性
+
+在双引号中间，写法要符合css规范
+
+可以控制当前的标签设置样式
+
+由于书写繁琐，并且没有体现出结构与样式相分离的思想，所以不太推荐大量使用，只有对当前元素添加简单样式的时候，可以考虑使用
+
+使用行内样式表设定css，通常也被称为行内式引入
+
+#### 外部样式表
+
+实际开发都是外部样式表，适合于样式比较多的情况，核心是：样式单独写到css文件中，之后把css文件引入到html页面中使用。
+
+引入外部样式表分为两步：
+
+1.新建一个后缀名为.css的样式文件，把所有css代码都放入此文件中。
+
+2.在html界面中，使用<link>标签引入这个文件
+
+`<link rel="stylsheet" href="css文件路径">`
+
+| 属性 | 作用                                                         |
+| ---- | ------------------------------------------------------------ |
+| rel  | 定义当前文档与被链接文档之间的关系，在这里需要指定为“stylesheet”，表示被链接的文档是一个样式表文件 |
+| href | 定义所链接外部样式表文件的url，可以是相对路径，也可以是绝对路径 |
+
+| 样式表     | 优点                   | 缺点         | 使用情况 | 控制范围     |
+| ---------- | ---------------------- | ------------ | -------- | ------------ |
+| 行内样式表 | 书写方标，权重高       | 结构样式混写 | 较少     | 控制一个标签 |
+| 内部样式表 | 部分结构和样式分离     | 没有彻底分离 | 较多     | 控制一个页面 |
+| 外部样式表 | 完全实现结构和样式分离 | 需要引入     | 最多     | 控制多个页面 |
+
+
       
 
       
